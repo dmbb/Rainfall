@@ -1,3 +1,9 @@
+#####################################################
+# Copyright (c) 2014 Diogo Barradas                 #
+#                                                   #
+# See the file LICENSE.txt for copying permission.  #
+#####################################################
+
 #!/usr/bin/env python
 
 import logging
