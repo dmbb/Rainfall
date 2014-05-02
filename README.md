@@ -1,8 +1,8 @@
 #Rainfall
-=========
-This is a small project which i developed as i'm learning python.
 
-Rainfall is a TCP port scanner that allows you to do stealth scans.
+This is a small project that i'm developing while learning Python.
+
+Rainfall is a console based TCP port scanner that allows you to do stealth scans.
 I used [scapy](http://www.secdev.org/projects/scapy/) for it, as it turns out to ease packet manipulation.
 This version is currently single-threaded, i'm looking forward to turn it multi-threaded in order to speed up the scans.
 
@@ -14,14 +14,15 @@ Currently, it can do:
 * ACK scanning
 
 ##Tasks
-- [] Show service name next to the corresponding port number.
-- [] Turn the scanner into a multi-threaded one.
-- [] Do some OS fingerprinting assessment
+- [ ] Show service name next to the corresponding port number.
+- [ ] Turn the scanner into a multi-threaded one.
+- [ ] Do some OS fingerprinting assessment
 
 
 ##How to use
 
-'''sudo python rainfall.py -h
+```
+sudo python rainfall.py -h
 usage: rainfall [-h] [--version] -p PORTS PORTS -t TARGET -m MODE
 
 optional arguments:
@@ -32,6 +33,6 @@ optional arguments:
   -t TARGET, --target TARGET
                         Target host
   -m MODE, --mode MODE  scan mode: 1-syn, 2-xmas, 3-fin, 4-null, 5-ack
-  '''
+  ```
   
   _Must be run in sudo because scapy demands it._
